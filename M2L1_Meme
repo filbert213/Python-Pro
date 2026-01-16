@@ -28,14 +28,21 @@ async def emoji(ctx):
 async def heh(ctx, count_heh = 5):
     await ctx.send("he" * count_heh)
 
-
 print(os.listdir('images'))
 
 @bot.command()
-async def meme(ctx):
-    images = os.listdir('images')
+async def animal(ctx):
+    images = os.listdir('images/animal_memes')
     image_name = random.choice(images)
-    with open(f'images/{image_name}', 'rb') as f:
+    with open(f'images/animal_memes/{image_name}', 'rb') as f:
+        picture = discord.File(f)
+    await ctx.send(file=picture)
+
+@bot.command()
+async def popculture(ctx):
+    images = os.listdir('images/pop_culture_memes')
+    image_name = random.choice(images)
+    with open(f'images/pop_culture_memes/{image_name}', 'rb') as f:
         picture = discord.File(f)
     await ctx.send(file=picture)
 
