@@ -14,7 +14,7 @@ async def on_ready():
 
 @bot.command()
 async def hello(ctx):
-    await ctx.send(f'Hi! I am a bot. My name is {bot.user}!')
+    await ctx.send(f'Hi! Aku robot pencinta lingkungan!')
 
 @bot.command()
 async def pilah(ctx, *, benda: str):
@@ -77,13 +77,13 @@ async def buang(ctx, *, benda: str):
 @bot.command()
 async def fakta(ctx):
     fakta = [
-        "Sampah organik dapat terurai secara alami dan biasanya berasal dari sisa makanan atau bahan-bahan yang dapat terurai seperti daun dan kayu.",
+        "🌱Sampah organik dapat terurai secara alami dan biasanya berasal dari sisa makanan atau bahan-bahan yang dapat terurai seperti daun dan kayu.",
         "Sampah anorganik adalah sampah yang tidak dapat terurai secara alami, seperti plastik, logam, dan kaca.",
-        "Sampah B3 (Bahan Berbahaya dan Beracun) memerlukan penanganan khusus karena dapat membahayakan kesehatan manusia dan lingkungan, contohnya adalah baterai dan elektronik rusak.",
-        "Daur ulang sampah anorganik seperti plastik dan kertas dapat mengurangi jumlah sampah di tempat pembuangan akhir dan menghemat sumber daya alam.",
-        "Komposting adalah proses mengubah sampah organik menjadi pupuk alami yang dapat digunakan untuk menyuburkan tanaman."
-        "Selain tempat sampah organik (hijau), anorganik (kuning), dan B3 (merah), ada juga tempat sampah untuk sampah residu (abu-abu) dan tempat sampah spesifik kertas (biru).",
-        "Terdapat perkembangan teknologi yang memungkinkan pengolahan sampah menjadi energi, seperti insinerasi dan biogas."
+        "🪫Sampah B3 (Bahan Berbahaya dan Beracun) memerlukan penanganan khusus karena dapat membahayakan kesehatan manusia dan lingkungan, contohnya adalah baterai dan elektronik rusak.",
+        "♻️Daur ulang sampah anorganik seperti plastik dan kertas📄 dapat mengurangi jumlah sampah di tempat pembuangan akhir dan menghemat sumber daya alam.",
+        "Komposting adalah proses mengubah sampah organik menjadi pupuk alami🪏 yang dapat digunakan untuk menyuburkan tanaman.",
+        "🗑️Selain tempat sampah organik (hijau), anorganik (kuning), dan B3 (merah), ada juga tempat sampah untuk sampah residu (abu-abu) dan tempat sampah spesifik kertas (biru).",
+        "Terdapat perkembangan teknologi yang memungkinkan pengolahan sampah menjadi energi⚡️, seperti insinerasi dan biogas.",
         "Sudah mulai ada plastik biodegradable yang dapat terurai lebih cepat dibandingkan plastik konvensional."
     ]
     fakta = random.choice(fakta)
